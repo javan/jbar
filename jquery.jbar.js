@@ -1,6 +1,6 @@
 /*
  * jbar (for jQuery)
- * version: 0.1.0 (08/27/2010)
+ * version: 0.1.1 (08/27/2010)
  * @requires jQuery v1.4 or later
  * http://javan.github.com/jbar/
  * http://github.com/javan/jbar
