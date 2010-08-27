@@ -1,8 +1,10 @@
-jbar is a jQuery plugin that transforms an unordered list (`<ul>`) into a toolbar with dropdown menus.
+jbar is a jQuery plugin that transforms an unordered list `<ul>` into a toolbar with dropdown menus.
 
 
 Usage
 -----
+
+Download the latest version of jbar: http://github.com/javan/jbar/zipball/master
 
 jbar requires jQuery 1.4 or higher.
 Copy jquery.jbar.js and jbar.css to your server and reference them.
@@ -17,6 +19,8 @@ Call .jbar() on your menu elements.
       });
     </script>
   
-  
+
+Contact
+-------
 
 Javan Makhmali :: javan@javan.us
