@@ -40,7 +40,7 @@ ul.jbar li {
 }
 
 ul.jbar li a {
-  color: #cecece;
+  color: #cecece !important;
   text-decoration: none;
   padding: 3px 5px;
   background-color: #3D3D3D;
@@ -95,7 +95,7 @@ ul.jbar li a.has_no_down_arrow:hover,
 ul.jbar li a.has_lonely_down_arrow:hover,
 ul.jbar li a.trigger:hover,
 ul.jbar li .hovered {
-  color: #fff;
+  color: #fff !important;
 }
 
 ul.jbar span.down_arrow {
