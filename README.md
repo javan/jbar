@@ -5,6 +5,7 @@ Demo
 ----
 
 ![Screenshot](http://github.com/downloads/javan/jbar/jbar_screenshot.png)
+
 View demo page: http://javan.github.com/jbar/
 
 
