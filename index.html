@@ -1,80 +1,128 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
-	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta charset="utf-8" />
 
-	<title>javan/jbar @ GitHub</title>
-	
-	<style type="text/css">
-		body {
-  		margin-top: 1.0em;
-  		background-color: #b1fc59;
-		  font-family: "Helvetica,Arial,FreeSans";
-  		color: #000000;
-    }
-    #container {
-      margin: 0 auto;
-      width: 700px;
-    }
-		h1 { font-size: 3.8em; color: #4e03a6; margin-bottom: 3px; }
-		h1 .small { font-size: 0.4em; }
-		h1 a { text-decoration: none }
-		h2 { font-size: 1.5em; color: #4e03a6; }
-    h3 { text-align: center; color: #4e03a6; }
-    a { color: #4e03a6; }
-    .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
-    .download { float: right; }
-		pre { background: #000; color: #fff; padding: 15px;}
-    hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-    .footer { text-align:center; padding-top:30px; font-style: italic; }
-	</style>
-	
+<title>javan/jbar @ GitHub</title>
+
+<style type="text/css">
+	body {
+		margin-top: 1.0em;
+		background-color: #fff;
+	  font-family: helvetica, arial, sans-serif;
+		color: #000000;
+  }
+  #container {
+    margin: 0 auto;
+    width: 700px;
+  }
+	h1 { font-size: 3.8em; color: #3D3D3D; margin-bottom: 3px; }
+	h1 .small { font-size: 0.4em; }
+	h1 a { text-decoration: none }
+	h2 { font-size: 1.5em; color: #3D3D3D; }
+  h3 { text-align: center; color: #3D3D3D; }
+  a { color: #3D3D3D; }
+  .description { font-size: 1.2em; margin-bottom: 30px; margin-top: 30px; font-style: italic;}
+  .download { float: right; }
+	pre.console { background: #3D3D3D; color: #fff; padding: 8px;}
+  hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
+  .footer { text-align:center; padding-top:30px; font-style: italic; font-size: 0.8em; }
+</style>
+
+<link href="http://github.com/javan/jbar/raw/master/jbar.css" media="screen" rel="stylesheet" type="text/css" />
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
+<script src="http://github.com/javan/jbar/raw/master/jquery.jbar.js" type="text/javascript"></script>
+<script type="text/javascript">
+  jQuery(function(){ 
+    jQuery('.jbar').jbar();
+  });
+</script>
+
+<script type="text/javascript">
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-218481-14']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+</script>
 </head>
 
 <body>
   <a href="http://github.com/javan/jbar"><img style="position: absolute; top: 0; right: 0; border: 0;" src="http://s3.amazonaws.com/github/ribbons/forkme_right_darkblue_121621.png" alt="Fork me on GitHub" /></a>
 
-  <div id="container">
+<div id="container">
 
-    <div class="download">
-      <a href="http://github.com/javan/jbar/zipball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
-      <a href="http://github.com/javan/jbar/tarball/master">
-        <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
-    </div>
-
-    <h1><a href="http://github.com/javan/jbar">jbar</a>
-      <span class="small">by <a href="http://github.com/javan">javan</a></span></h1>
-
-    <div class="description">
-      A jQuery enhanced toolbar.
-    </div>
-
-    <h2>Authors</h2>
-<p>Javan Makhmali (javan@javan.us)<br/><br/>      </p>
-<h2>Contact</h2>
-<p>Javan Makhmali (javan@javan.us)<br/>      </p>
-
-
-    <h2>Download</h2>
-    <p>
-      You can download this project in either
-      <a href="http://github.com/javan/jbar/zipball/master">zip</a> or
-      <a href="http://github.com/javan/jbar/tarball/master">tar</a> formats.
-    </p>
-    <p>You can also clone the project with <a href="http://git-scm.com">Git</a>
-      by running:
-      <pre>$ git clone git://github.com/javan/jbar</pre>
-    </p>
-
-    <div class="footer">
-      get the source code on GitHub : <a href="http://github.com/javan/jbar">javan/jbar</a>
-    </div>
-
+  <div class="download">
+    <a href="http://github.com/javan/jbar/zipball/master">
+      <img border="0" width="90" src="http://github.com/images/modules/download/zip.png"></a>
+    <a href="http://github.com/javan/jbar/tarball/master">
+      <img border="0" width="90" src="http://github.com/images/modules/download/tar.png"></a>
   </div>
 
+  <h1><a href="http://github.com/javan/jbar">jbar</a>
+    <span class="small">by <a href="http://github.com/javan">javan</a></span></h1>
+
+  <div class="description">
+    A jQuery enhanced toolbar.
+  </div>
   
+  <h2>Demo</h2>
+  
+  <div style="padding: 0 0 30px 30px;">
+    <ul class="jbar">
+      <li>
+        <a href="#">Actions</a>
+        <ul>
+          <li><a href="http://github.com/javan/jbar">Fork me on github</a></li>
+          <li><a href="http://github.com/javan/jbar/zipball/master">Download .zip</a></li>
+          <li><a href="http://github.com/javan/jbar/tarball/master">Download .tar.gz</a></li>
+        </ul>
+      </li>
+      <li>
+        <a href="http://github.com/javan/jbar">Fork me on github</a>
+      </li>
+      <li>
+        <a href="http://github.com/javan/jbar">Link <em>and</em> submenu</a>
+        <ul>
+          <li><a href="http://github.com/javan/jbar">Fork me on github</a></li>
+          <li><a href="http://github.com/javan/jbar/zipball/master">Download .zip</a></li>
+          <li><a href="http://github.com/javan/jbar/tarball/master">Download .tar.gz</a></li>
+        </ul>
+      </li>
+      <li>
+        <ul>
+          <li><a href="http://github.com/javan/jbar">Fork me on github</a></li>
+          <li><a href="http://github.com/javan/jbar/zipball/master">Download .zip</a></li>
+          <li><a href="http://github.com/javan/jbar/tarball/master">Download .tar.gz</a></li>
+        </ul>
+      </li>
+    </ul>
+  </div>
+  
+  <ul style="margin: 40px 0 0 0; padding: 0">
+    <li>
+      <a href="#" onclick="$('#jbar_example').toggle(); return false;">view demo source</a>
+      <div id="jbar_example" style="display: none">
+        <script src="http://gist.github.com/553638.js?file=jbar_example.html"></script>
+      </div>
+    </li>
+    <li>
+      <a href="#" onclick="$('#jbar_transformed').toggle(); return false;">view transformed source after .jbar() runs</a>
+      <div id="jbar_transformed" style="display: none">
+        <script src="http://gist.github.com/553638.js?file=jbar_transformed.html"></script>
+      </div>
+    </li>
+  </ul>
+  
+  <div class="footer">
+    <p>Copyright 2010+ Javan Makhmali :: javan@javan.us</p>
+    <p>Licensed under the MIT: <a href="http://www.opensource.org/licenses/mit-license.php">http://www.opensource.org/licenses/mit-license.php</a></p>
+  </div>
+</div>
+
 </body>
 </html>
