@@ -49,6 +49,7 @@ ul.jbar li a {
   -webkit-background-clip: padding-box;
   text-shadow: 1px 1px 2px #292929;
   display: inline-block;
+  line-height: 16px;
   height: 16px;
   vertical-align: middle;
 }
@@ -130,6 +131,7 @@ ul.jbar div.submenu_container {
   padding-top: 12px;
 }
 
+
 ul.jbar span.up_arrow {
   position: absolute;
   font-size: 13px !important;
@@ -159,10 +161,14 @@ ul.jbar ul li {
   text-shadow: none;
   float: none;
   display: block;
+  overflow: hidden;
+  width: 100%;
 }
 
 ul.jbar ul li a {
   display: block;
+  overflow: hidden;
+  text-overflow: ellipsis;
   padding: 4px 6px;
   color: #fff !important;
   text-decoration: none;
@@ -172,6 +178,7 @@ ul.jbar ul li a {
   -moz-border-radius: 0; 
   -webkit-border-radius: 0;
   zoom: 1;
+  height: auto;
 }
 
 ul.jbar ul li a:hover {
