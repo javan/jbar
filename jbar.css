@@ -43,9 +43,10 @@ ul.jbar li a {
   color: #cecece !important;
   text-decoration: none;
   padding: 3px 5px;
-  background-color: #3D3D3D;
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#656464), to(#3D3D3D));
-  background:-moz-linear-gradient(center top, #656464, #3D3D3D) repeat scroll 0 0 transparent;
+  background-color: #3D3D3D !important;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#656464), to(#3D3D3D));
+  background: -moz-linear-gradient(center top, #656464, #3D3D3D) repeat scroll 0 0 transparent;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#656464', endColorstr='#3D3D3D', GradientType=0);
   -webkit-background-clip: padding-box;
   text-shadow: 1px 1px 2px #292929;
   display: inline-block;
@@ -74,8 +75,9 @@ ul.jbar li a.last span.trigger {
 }
 
 ul.jbar li .triggered {
-  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#3D3D3D), to(#656464));
-  background:-moz-linear-gradient(center top, #3D3D3D, #656464) repeat scroll 0 0 transparent;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#3D3D3D), to(#656464));
+  background: -moz-linear-gradient(center top, #3D3D3D, #656464) repeat scroll 0 0 transparent;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3D3D3D', endColorstr='#656464', GradientType=0);
   color: #eee;
 }
 
@@ -177,12 +179,13 @@ ul.jbar ul li a {
   background-image: none;
   -moz-border-radius: 0; 
   -webkit-border-radius: 0;
+  filter: -;
   zoom: 1;
   height: auto;
 }
 
 ul.jbar ul li a:hover {
-  background-color: #fff;
+  background-color: #fff !important;
   background-image: none;
   color: #333 !important;
   text-shadow: none;
