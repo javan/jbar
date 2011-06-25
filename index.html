@@ -16,6 +16,15 @@
     margin: 0 auto;
     width: 700px;
   }
+  ul.source {
+    font-size: 12px;
+    padding: 0;
+    color: #333;
+    list-style-type: none;
+  }
+  ul.source li {
+    margin-bottom: 10px;
+  }
 	h1 { font-size: 3.8em; color: #3D3D3D; margin-bottom: 3px; }
 	h1 .small { font-size: 0.4em; }
 	h1 a { text-decoration: none }
@@ -26,12 +35,11 @@
   .download { float: right; }
 	pre.console { background: #3D3D3D; color: #fff; padding: 8px;}
   hr { border: 0; width: 80%; border-bottom: 1px solid #aaa}
-  .footer { text-align:center; padding-top:30px; font-style: italic; font-size: 0.8em; }
 </style>
 
-<link href="https://github.com/javan/jbar/raw/master/jbar.css" media="screen" rel="stylesheet" type="text/css" />
+<link href="jbar.css" media="screen" rel="stylesheet" type="text/css" />
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.4.2/jquery.min.js" type="text/javascript"></script>
-<script src="https://github.com/javan/jbar/raw/master/jquery.jbar.js" type="text/javascript"></script>
+<script src="jquery.jbar.js" type="text/javascript"></script>
 <script type="text/javascript">
   jQuery(function(){ 
     jQuery('.jbar').jbar();
@@ -70,9 +78,7 @@
     A jQuery enhanced toolbar.
   </div>
   
-  <h2>Demo</h2>
-  
-  <div style="padding: 0 0 30px 30px;">
+  <div style="padding: 40px 0 80px 0">
     <ul class="jbar">
       <li>
         <a href="#">Actions</a>
@@ -103,25 +109,20 @@
     </ul>
   </div>
   
-  <ul style="margin: 40px 0 0 0; padding: 0">
+  <ul class="source">
     <li>
-      <a href="#" onclick="$('#jbar_example').toggle(); return false;">view demo source</a>
+      <a href="#" onclick="$('#jbar_example').toggle(); return false;">+ view demo source</a>
       <div id="jbar_example" style="display: none">
         <script src="https://gist.github.com/553638.js?file=jbar_example.html"></script>
       </div>
     </li>
     <li>
-      <a href="#" onclick="$('#jbar_transformed').toggle(); return false;">view transformed source after .jbar() runs</a>
+      <a href="#" onclick="$('#jbar_transformed').toggle(); return false;">+ view transformed source after .jbar() runs</a>
       <div id="jbar_transformed" style="display: none">
         <script src="https://gist.github.com/553638.js?file=jbar_transformed.html"></script>
       </div>
     </li>
   </ul>
-  
-  <div class="footer">
-    <p>Copyright 2010+ Javan Makhmali :: javan@javan.us</p>
-    <p>Licensed under the MIT: <a href="http://www.opensource.org/licenses/mit-license.php">http://www.opensource.org/licenses/mit-license.php</a></p>
-  </div>
 </div>
 
 </body>
