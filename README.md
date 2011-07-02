@@ -4,7 +4,7 @@ jbar is a jQuery plugin that transforms an unordered list `<ul>` into a toolbar 
 Demo
 ----
 
-![Screenshot](http://cloud.github.com/downloads/javan/jbar/jbar-screenshot-v0.2.0.png)
+![Screenshot](https://github.com/downloads/javan/jbar/jbar-screenshot-v0.2.0.png)
 
 View demo page: <http://javan.github.com/jbar/>
 
