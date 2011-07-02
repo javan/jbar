@@ -4,7 +4,7 @@ jbar is a jQuery plugin that transforms an unordered list `<ul>` into a toolbar 
 Demo
 ----
 
-![Screenshot](https://github.com/downloads/javan/jbar/jbar_screenshot.png)
+![Screenshot](http://cloud.github.com/downloads/javan/jbar/jbar-screenshot-v0.2.0.png)
 
 View demo page: <http://javan.github.com/jbar/>
 
@@ -15,8 +15,8 @@ Usage
 Download the latest version of jbar: <http://github.com/javan/jbar/zipball/master>
 
 jbar requires jQuery 1.4 or higher.  
-Copy jquery.jbar.js and jbar.css to your server and reference them.  
-Call .jbar() on your menu elements
+Copy `jquery.jbar.js` and `jbar.css` to your server and reference them.  
+Call `.jbar()` on your menu elements
 
 See example: <http://gist.github.com/553638>
 
@@ -40,4 +40,4 @@ Fine print
 Licensed under the MIT:
   <http://www.opensource.org/licenses/mit-license.php>
 
-Copyright 2010+ Javan Makhmali :: <javan@javan.us>
+Copyright 2011+ Javan Makhmali :: <javan@javan.us>
