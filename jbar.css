@@ -32,7 +32,7 @@ ul.jbar a {
 
 ul.jbar li {
   position: relative;
-  margin: 0 1px 0 0;
+  margin: 0;
   padding: 0;
   text-shadow: 1px 1px 2px #292929;
   display: inline-block;
@@ -53,6 +53,8 @@ ul.jbar li a {
   line-height: 16px;
   height: 16px;
   vertical-align: middle;
+  border-left: 1px solid #7b7b7b;
+  border-right: 1px solid #363636;
 }
 
 ul.jbar li a.first {
@@ -62,6 +64,7 @@ ul.jbar li a.first {
   -moz-border-radius-bottomleft: 3px;
   border-top-left-radius: 3px;
   border-bottom-left-radius: 3px;
+  border-left: none;
 }
 
 ul.jbar li a.last,
@@ -72,6 +75,7 @@ ul.jbar li a.last span.trigger {
   -moz-border-radius-bottomright: 3px;
   border-top-right-radius: 3px;
   border-bottom-right-radius: 3px;
+  border-right: none;
 }
 
 ul.jbar li .triggered {
@@ -79,6 +83,7 @@ ul.jbar li .triggered {
   background: -moz-linear-gradient(center top, #3D3D3D, #656464) repeat scroll 0 0 transparent;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#3D3D3D', endColorstr='#656464', GradientType=0);
   color: #eee;
+  border-left-color: transparent;
 }
 
 ul.jbar li a.has_down_arrow {
@@ -182,6 +187,8 @@ ul.jbar ul li a {
   filter: -;
   zoom: 1;
   height: auto;
+  border-left: none;
+  border-right: none;
 }
 
 ul.jbar ul li a:hover {
