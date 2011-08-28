@@ -1,4 +1,4 @@
-/*
+ /*
  * jbar (for jQuery)
  * version: 0.2.0 (07/02/2011)
  * @requires jQuery v1.4 or later
@@ -101,9 +101,9 @@
           var upArrowPosition = downArrowPosition;
           // If the down arrow is more to the right than the submenu,
           // put the up arrow on the right side of the submenu.
-          if (li.find('.last').size()>0) {
+          if (li.find('.last').size() > 0) {
             upArrowPosition += submenuWidth - li.outerWidth();
-        	  li.find('.submenu_container').addClass('last');
+            li.find('.submenu_container').addClass('last');
           }
           if (downArrowPosition > submenuWidth) {
             upArrowPosition = submenuWidth - 20;
