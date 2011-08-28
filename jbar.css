@@ -138,6 +138,10 @@ ul.jbar div.submenu_container {
   padding-top: 12px;
 }
 
+ul.jbar div.submenu_container.last {
+  left: auto;
+	right: 0;
+}
 
 ul.jbar span.up_arrow {
   position: absolute;
