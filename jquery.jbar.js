@@ -101,6 +101,10 @@
           var upArrowPosition = downArrowPosition;
           // If the down arrow is more to the right than the submenu,
           // put the up arrow on the right side of the submenu.
+          if (li.find('.last')) {
+            upArrowPosition += submenuWidth - li.outerWidth();
+        	  li.find('.submenu_container').addClass('last');
+          }
           if (downArrowPosition > submenuWidth) {
             upArrowPosition = submenuWidth - 20;
           }
