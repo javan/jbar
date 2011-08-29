@@ -17,6 +17,7 @@ ul.jbar {
   list-style-type: none;
   text-align: left;
   font-family: arial, sans-serif;
+  letter-spacing: .02em;
   clear: both;
 }
 
@@ -25,6 +26,7 @@ ul.jbar * {
 }
 
 ul.jbar a {
+  font-size: 12px;
   line-height: 16px;
 }
 
@@ -32,20 +34,21 @@ ul.jbar li {
   position: relative;
   margin: 0;
   padding: 0;
-/*  text-shadow: 1px 1px 2px #292929;*/
+  text-shadow: 1px 1px 2px #292929;
   display: inline-block;
   float: left;
 }
 
 ul.jbar li a {
-  color: #464646;
+  color: #cecece !important;
   text-decoration: none;
   padding: 3px 5px;
-  background-color: #fff;
-/*  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#656464), to(#3D3D3D));*/
-/*  background: -moz-linear-gradient(center top, #656464, #3D3D3D) repeat scroll 0 0 transparent;*/
-/*  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#656464', endColorstr='#3D3D3D', GradientType=0);*/
-/*  text-shadow: 1px 1px 2px #292929;*/
+  background-color: #3D3D3D !important;
+  background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#656464), to(#3D3D3D));
+  background: -moz-linear-gradient(center top, #656464, #3D3D3D) repeat scroll 0 0 transparent;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#656464', endColorstr='#3D3D3D', GradientType=0);
+  -webkit-background-clip: padding-box;
+  text-shadow: 1px 1px 2px #292929;
   display: inline-block;
   line-height: 16px;
   height: 16px;
@@ -100,8 +103,7 @@ ul.jbar li a.has_no_down_arrow:hover,
 ul.jbar li a.has_lonely_down_arrow:hover,
 ul.jbar li a.trigger:hover,
 ul.jbar li .hovered {
-  color: #000 !important;
-	text-decoration: underline;
+  color: #fff !important;
 }
 
 ul.jbar span.down_arrow {
@@ -137,17 +139,13 @@ ul.jbar div.submenu_container {
 }
 
 ul.jbar div.submenu_container.right {
-	left:auto;
-	right:0;
-}
-
-ul.jbar div.submenu_container li a{
-	background-color: #FFF;
+  left:auto;
+  right:0;
 }
 
 ul.jbar span.up_arrow {
   position: absolute;
-  font-size: 13px;
+  font-size: 13px !important;
   top: 0;
   color: #3D3D3D;
   text-shadow: 0px -1px 1px #3D3D3D;
@@ -155,10 +153,13 @@ ul.jbar span.up_arrow {
 }
 
 ul.jbar ul {
-  border: 2px solid #E78F08;
-  border-radius: 3px; 
+  border: 3px solid #3D3D3D;
+  -moz-border-radius: 3px; 
+  -webkit-border-radius: 3px;
+  -webkit-box-shadow: 0px 0px 7px #1a1a1a;
+  -moz-box-shadow: 0px 0px 7px #1a1a1a;
   box-shadow: 0px 0px 7px #1a1a1a;
-  background-clip: padding-box;
+  -webkit-background-clip: padding-box;
   margin: 0;
   padding: 0;
   list-style-type: none;
@@ -180,12 +181,13 @@ ul.jbar ul li a {
   overflow: hidden;
   text-overflow: ellipsis;
   padding: 4px 6px;
-  color: #464646 !important;
-/*  text-decoration: none;*/
-/*  text-shadow: 1px 1px 2px #292929;*/
+  color: #fff !important;
+  text-decoration: none;
+  text-shadow: 1px 1px 2px #292929;
   background-color: #454545;
   background-image: none;
-  border-radius: 0; 
+  -moz-border-radius: 0; 
+  -webkit-border-radius: 0;
   filter: -;
   zoom: 1;
   height: auto;
@@ -198,7 +200,6 @@ ul.jbar ul li a:hover {
   background-image: none;
   color: #333 !important;
   text-shadow: none;
-	text-decoration: underline;
 }
 
 div.jbar_IE_zIndex_fix {
