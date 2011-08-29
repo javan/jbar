@@ -1,4 +1,4 @@
- /*
+/*
  * jbar (for jQuery)
  * version: 0.2.0 (07/02/2011)
  * @requires jQuery v1.4 or later
@@ -96,15 +96,17 @@
         li.find('.trigger').live(config.showSubmenuEvent, function(event){
           event.preventDefault();
           var submenuWidth = li.find('.submenu_container').outerWidth();
-          var downArrowPosition = li.find('.down_arrow').position().left + 2;
+          var barWidth = $('a.last').parent().parent().outerWidth();
           // The up arrow is positioned directly under the down arrow by default.
+          var downArrowPosition = li.find('.down_arrow').position().left + 1;
           var upArrowPosition = downArrowPosition;
+          // Right align the sub menu if we hit the right border of the Menu bar;
+          if ((li.position().left + submenuWidth > barWidth) || (li.outerWidth() > submenuWidth)) {
+           upArrowPosition += submenuWidth - li.outerWidth();
+        	  li.find('.submenu_container').addClass('right');
+          }
           // If the down arrow is more to the right than the submenu,
           // put the up arrow on the right side of the submenu.
-          if (li.find('.last').size() > 0) {
-            upArrowPosition += submenuWidth - li.outerWidth();
-            li.find('.submenu_container').addClass('last');
-          }
           if (downArrowPosition > submenuWidth) {
             upArrowPosition = submenuWidth - 20;
           }
