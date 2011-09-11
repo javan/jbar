@@ -96,7 +96,7 @@
         li.find('.trigger').live(config.showSubmenuEvent, function(event){
           event.preventDefault();
           var submenuWidth = li.find('.submenu_container').outerWidth();
-          var barWidth = $('a.last').parent().parent().outerWidth();
+          var barWidth = menu.outerWidth();
           // The up arrow is positioned directly under the down arrow by default.
           var downArrowPosition = li.find('.down_arrow').position().left + 1;
           var upArrowPosition = downArrowPosition;
