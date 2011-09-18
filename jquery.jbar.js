@@ -96,9 +96,15 @@
         li.find('.trigger').live(config.showSubmenuEvent, function(event){
           event.preventDefault();
           var submenuWidth = li.find('.submenu_container').outerWidth();
-          var downArrowPosition = li.find('.down_arrow').position().left + 2;
+          var barWidth = menu.outerWidth();
           // The up arrow is positioned directly under the down arrow by default.
+          var downArrowPosition = li.find('.down_arrow').position().left + 1;
           var upArrowPosition = downArrowPosition;
+          // Right align the sub menu if we hit the right border of the Menu bar;
+          if ((li.position().left + submenuWidth > barWidth) || (li.outerWidth() > submenuWidth)) {
+           upArrowPosition += submenuWidth - li.outerWidth();
+        	  li.find('.submenu_container').addClass('right');
+          }
           // If the down arrow is more to the right than the submenu,
           // put the up arrow on the right side of the submenu.
           if (downArrowPosition > submenuWidth) {
